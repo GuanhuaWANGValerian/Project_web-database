@@ -1,0 +1,77 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>PROJET WEB&amp;BD: les Aéroports chinois</title>
+	<meta charset="utf-8"/>
+	<meta name="Author" content="Guanhua WANG"/>
+	<meta name="Description" content="Projet du coursIM"/>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:700" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="projet.css"/>
+	<script type="text/javascript" src="form.js"></script>
+</head>
+<body>
+	<div id="bandeau">
+		<h1>AEROPORTS CHINOIS</h1>
+		<h2>Projet Web &amp; Base de données</h2><br>
+		<hr id="separate" />
+	</div>
+	<div id="table">
+		<div id="menu">
+			<h3>MENU</h3>
+			<a href="index.html" class="sous-page">ACCUEIL</a><br><br><br>
+			<hr/><br><br>
+			<a href="#texte" class="sous-page">RECHERCHER UN AEROPORT</a><br><br><br><br>
+			<a href="inserer.html" class="sous-page">INSERER MON COMMENTAIRE</a><br><br><br><br>
+			<a href="consulter.html" class="sous-page">CONSULTER LES COMMENTAIRES</a><br><br><br>
+			<hr/><br><br>
+		</div>
+		<div id="texte">
+			<h4>RECHERCHER UN AEROPORT</h4>
+			<form action="projet.php" method="GET">
+				<fieldset>
+					<legend>Recherche par le nom</legend>
+					<h5>Entrez le nom de l'aéroport que vous voulez rechercher: </h5>
+					<input type="text" name="nom_aero">
+					<input type="submit" name="rechercher_nom" value="Rechercher">
+				</fieldset>
+				<br>
+				<fieldset id="recherche_detail">
+					<legend>Recherche par la localisation</legend>
+					<h5>Province/Région:</h5>
+					<select name="province"></select>
+					<h5>Ville:</h5>
+					<select name="ville"></select>
+					<input type="submit" name="recherche_loca" value="Rechercher">
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Recherche par le type de l'aéroport</legend>
+					<h5>Type de l'aéroport(taille): </h5>
+					<select name="type">
+						<option value="small_airport">small airport</option>
+						<option value="medium_airport">medium airport</option>
+						<option value="large_airport">large airport</option>
+						<option value="heliport">heliport</option>
+						<option value="seaplane_base">seaplane base</option>
+						<option value="closed">closed</option>
+					</select>
+					<input type="submit" name="recherche_type" value="Rechercher">
+				</fieldset>
+				<br>
+				<fieldset>
+					<legend>Rechercher par le service régulier fourni ou non</legend>
+					<h5>Est-ce que l'aéroport que vous cherchez fournit le service programmé? </h5>
+					<label>Oui </label>
+					<input type="radio" name="service" value="yes">
+					<label>Non </label>
+					<input type="radio" name="service" value="no">
+					<input type="submit" name="rechercher_service" value="Rechercher">
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div id="pied">
+		<p>Copyright©Guanhua WANG</p>
+	</div>
+</body>
+</html>

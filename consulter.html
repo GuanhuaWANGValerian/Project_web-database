@@ -1,0 +1,57 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<title>PROJET WEB&amp;BD: les Aéroports chinois</title>
+	<meta charset="utf-8"/>
+	<meta name="Author" content="Guanhua WANG"/>
+	<meta name="Description" content="Projet du coursIM"/>
+	<link href="https://fonts.googleapis.com/css?family=Nunito:700" rel="stylesheet"/>
+	<link rel="stylesheet" type="text/css" href="projet.css"/>
+</head>
+<body>
+	<div id="bandeau">
+		<h1>AEROPORTS CHINOIS</h1>
+		<h2>Projet Web &amp; Base de données</h2><br>
+		<hr id="separate" />
+	</div>
+	<div id="table">
+		<div id="menu">
+			<h3>MENU</h3>
+			<a href="index.html" class="sous-page">ACCUEIL</a><br><br><br>
+			<hr/><br><br>
+			<a href="recherche.html" class="sous-page">RECHERCHER UN AEROPORT</a><br><br><br><br>
+			<a href="inserer.html" class="sous-page">INSERER MON COMMENTAIRE</a><br><br><br><br>
+			<a href="#texte" class="sous-page">CONSULTER LES COMMENTAIRES</a><br><br><br>
+			<hr/><br><br>
+		</div>
+		<div id="texte">
+			<h4>CONSULTER LES COMMENTAIRES</h4>
+			<form action="projet.php" method="GET">
+				<fieldset>
+					<legend>Consulter les commentaires</legend>
+					<h5>Choisissez au moins un champ à compléter parmi les 3:</h5>
+					<br>
+					<h5>Quel est le nom ou l'identificateur de l'aéroport? </h5>
+					<input type="text" name="nom_ident">
+					<br>
+					<h5>Le type du commentaire: </h5>
+					<select name="type">
+						<option value="type" >type du commentaire</option>
+						<option value="avis">avis</option>
+						<option value="information">information</option>
+					</select>
+					<br>
+					<h5>Mot-clé du commentaire:</h5>
+					<input type="text" name="mot-cle">
+					<br>
+					<input type="submit" name="consulter" value="Consulter">
+					<input type="reset" name="effacer" value="Effacer">
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<div id="pied">
+		<p>Copyright©Guanhua WANG</p>
+	</div>
+</body>
+</html>

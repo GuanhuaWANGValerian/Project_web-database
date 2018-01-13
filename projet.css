@@ -1,0 +1,137 @@
+@font-face{
+	/* font-properties */
+	font-family: liberator;
+	src: url("img/Liberator.otf");
+}
+
+body{
+	background-image: url('img/bandeau.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+
+#bandeau, h1, h2, #menu{
+	color: #3399ff;
+	-webkit-mask-image: url("http://support.nature.org/images/earth/assets/grit.png");
+	mask-image: url("http://support.nature.org/images/earth/assets/grit.png");
+}
+
+h1{
+	background-color: rgba(255,255,255,0.3);
+	text-align: center;
+	font-size: 100px;
+	font-weight: 3px;
+	font-family: liberator;
+	margin-top: 60px;
+	padding-top: 10px;
+}
+h2{
+	text-align: center;
+	font-size: 36px;
+	font-weight: 1px;
+	font-family: serif;
+	margin-top: 80px;
+}
+#separate{
+	border: 0;
+    height: 5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(51, 153, 255, 1), rgba(143, 34, 74, 1));
+}
+
+
+#table{
+	display: table;
+	height: 100%;
+	width: 100%;
+	border-spacing: 15px;
+}
+
+#menu{
+	display: table-cell;
+	width: 30%;
+	font-family: liberator;
+	text-align: center;
+}
+h3{
+	font-size: 64px;
+	color: #8f224a;
+}
+.sous-page{
+	background: rgba(255, 255, 255, 0);
+	border: 3px #8f224a solid;
+	color: #8f224a;
+	cursor: pointer;
+	display: inline-block;
+	font-size: 24px;
+	line-height: 1;
+	padding: 15px 35px 12px;
+	text-decoration: none;
+	-webkit-transition: background 0.2s, color 0.2s;
+            transition: background 0.2s, color 0.2s;
+}
+.sous-page:hover{
+	background: #8f224a;
+	color: #fff;
+}
+hr{
+	border: 0;
+    height: 5px;
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(143, 34, 74, 1), rgba(0, 0, 0, 0));
+}
+
+#texte{
+	display: table-cell;
+	width: 65%;
+	padding-right: 30px;
+}
+h4{
+	font-family: liberator;
+	font-size: 64px;
+	color: #8f224a;
+	text-align: center;
+	-webkit-mask-image: url("http://support.nature.org/images/earth/assets/grit.png");
+	mask-image: url("http://support.nature.org/images/earth/assets/grit.png");
+}
+#texte p{
+	font-family: 'Nunito', sans-serif;
+	font-size: 24px;
+	text-align: justify;
+	text-justify: newspaper;
+}
+
+
+#pied{
+	margin-top: 15px;
+	position: relative;
+	bottom: 0;
+	height: 50px;
+	width: 100%;
+	text-align: center;
+	font-family: 'Nunito', sans-serif;
+}
+
+/* Styles pour les 3 sous-pages (formulaires)*/
+fieldset{
+	border: 5px solid;
+	-moz-border-radius: 30px;
+	-webkit-border-radius: 30px;
+	border-radius: 10px;
+	padding: 5px 30px 30px;
+}
+h5{
+	display: inline-block;
+	font-family: 'Nunito', sans-serif;
+	font-size: 18px;
+}
+legend{
+	font-family: 'Nunito', sans-serif;
+	font-size: 18px;
+	text-align: center;
+}
+input[type=text]{
+	height: 30px; 
+	padding: 5px;
+	margin: 5px;
+	font-size: 14px;
+}
