@@ -12,4 +12,3 @@ Subject of the project is `Chinese Airports`. It's aimed at providing organised 
 - Humain or sociological science researchers for their demographic or society research:
   1. By referencing information of a certain region/province of China (mainland)
   2. By consulting and comparing, by different criteria, users' comments to make remarks on inter-regional development
-
